@@ -5,14 +5,30 @@ package pl.put.poznan.transformer.logic;
  */
 public class TextTransformer {
 
-    private final String[] transforms;
-
+	private String textToChange;
+    private String[] transforms;
+    public TextTransformer(){
+    }
     public TextTransformer(String[] transforms){
-        this.transforms = transforms;
+        this.setTransforms(transforms);
     }
 
     public String transform(String text){
         // of course normally it would to something based on transforms
         return text.toUpperCase();
     }
+
+	public String[] getTransforms() {
+		return transforms;
+	}
+
+	public void setTransforms(String[] transforms) {
+		this.transforms = transforms;
+	}
+	public String getTextToChange() {
+		return textToChange;
+	}
+	public void setTextToChange(String textToChange) {
+		this.textToChange = textToChange;
+	}
 }
