@@ -1,1 +1,1 @@
-{"textToChange":"pisze","Transforms List":["transform: upper","transform: escape"]}
+{"textToChange":"sipezrp  im  jilsyw","Transforms List":["transform: inverse","transform: delete"]}

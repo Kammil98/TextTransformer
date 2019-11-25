@@ -53,7 +53,7 @@ public class TextTransformerController {
         // do the transformation, you should run your logic here, below just a silly example
         //Tutaj zróbcie swoje transformacje z obiektem transformer. W nim są zapisane transformacje do wykonania. 
     	 //Format w jakim zapiszecie transformacje zostawiam wam(muszą być tylko wypisywane po przecinku
-        
+        transformer.transform(transformer.getTextToChange());
 		model.addAttribute("transformerObject", transformer);//transformer will go to variable transformerObject in main.jsp
         return "main";
     }
@@ -75,6 +75,7 @@ public class TextTransformerController {
         }
         obj.put("Transforms List", transformsList);
         logger.debug(transformer.getTextToChange());
+        
         try (FileWriter file = new FileWriter("transformData.txt")) {//save transformations and text to json file
 			file.write(obj.toJSONString());
 			//System.out.println("Successfully Copied JSON Object to File...");
