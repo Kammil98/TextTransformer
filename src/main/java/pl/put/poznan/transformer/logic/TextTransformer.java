@@ -41,6 +41,12 @@ public class TextTransformer {
     		t=new ToUpper(t);
     		text=t.transform_text(text); 
     	}
+    	
+    	if(Arrays.asList(this.transforms).contains("change")) {
+    		t=new Change(t);
+    		text=t.transform_text(text); 
+    	}
+    	
        //System.out.println(text);
     	this.textToChange=text;
         return text;
