@@ -1,1 +1,1 @@
-{"textToChange":"sipezrp  im  jilsyw","Transforms List":["transform: inverse","transform: delete"]}
+{"textToChange":"tekst","Transforms List":["transform: capitalize"]}
