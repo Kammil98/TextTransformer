@@ -7,6 +7,6 @@ public class Capitalize extends TextTransformerDecorator{
 	}
 
 	public String transform_text(String transform_object) {	
-		return transform_object.toUpperCase();
+		return transform_object.substring(0, 1).toUpperCase() + transform_object.substring(1);
 	}
 }

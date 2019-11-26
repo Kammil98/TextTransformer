@@ -6,8 +6,7 @@ public class ToUpper extends TextTransformerDecorator{
 		super(inner);
 	}
 	
-	public String transform_text(String transform_object) {
-		//to do
-		return transform_object;
+	public String transform_text(String transform_object) {	
+		return transform_object.toUpperCase();
 	}
 }

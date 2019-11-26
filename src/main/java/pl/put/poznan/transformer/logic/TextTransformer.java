@@ -16,35 +16,33 @@ public class TextTransformer {
 
     public String transform(String text){
     	TransformInterface t = new TextTransformerDecoratorHelper();
-    	
-    	if(Arrays.asList(this.transforms).contains("inverse")) {
-    		t=new Inverse(t);
-    		text=t.transform_text(text); 
-    	}
-    	
-    	if(Arrays.asList(this.transforms).contains("delete")) {
-    		t=new DeleteRepetition(t);
-    		text=t.transform_text(text); 
-    	}
-    	
-    	if(Arrays.asList(this.transforms).contains("capitalize")) {
-    		t=new Capitalize(t);
-    		text=t.transform_text(text); 
-    	}
-    	
-    	if(Arrays.asList(this.transforms).contains("lower")) {
-    		t=new ToLower(t);
-    		text=t.transform_text(text); 
-    	}
-    	
-    	if(Arrays.asList(this.transforms).contains("upper")) {
-    		t=new ToUpper(t);
-    		text=t.transform_text(text); 
-    	}
-    	
-    	if(Arrays.asList(this.transforms).contains("change")) {
-    		t=new Change(t);
-    		text=t.transform_text(text); 
+    	boolean transoformable;
+    	for(String operation: transforms) {
+    		transoformable = true;
+    		switch(operation) {
+    		case "inverse":
+    			t=new Inverse(t);
+        		break;
+    		case "delete":
+    			t=new DeleteRepetition(t);
+        		break;
+    		case "capitalize":
+    			t=new Capitalize(t);
+        		break;
+    		case "lower":
+    			t=new ToLower(t);
+        		break;
+    		case "upper":
+    			t=new ToUpper(t);
+        		break;
+    		case "change":
+    			t=new Change(t);
+        		break;
+        	default :
+        		transoformable = false;
+    		}
+    		if(transoformable)
+    			text=t.transform_text(text); 
     	}
     	
        //System.out.println(text);

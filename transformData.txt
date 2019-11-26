@@ -1,1 +1,1 @@
-{"textToChange":"tekst","Transforms List":["transform: capitalize"]}
+{"textToChange":"Tekst","Transforms List":["transform: lower","transform: capitalize","transform: bal bal bal"]}
