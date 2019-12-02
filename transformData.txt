@@ -1,1 +1,1 @@
-{"textToChange":"bLo","Transforms List":["transform: capitalize"]}
+{"textToChange":"1001","Transforms List":["transform: numbers"]}

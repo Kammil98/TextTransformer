@@ -38,6 +38,9 @@ public class TextTransformer {
     		case "change":
     			t=new Change(t);
         		break;
+    		case "numbers":
+    			t=new NumberToText(t);
+    			break;
         	default :
         		transoformable = false;
     		}
