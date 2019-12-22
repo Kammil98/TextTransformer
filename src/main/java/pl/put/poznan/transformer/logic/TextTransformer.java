@@ -35,9 +35,6 @@ public class TextTransformer {
     		case "upper":
     			t=new ToUpper(t);
         		break;
-    		case "change":
-    			t=new Change(t);
-        		break;
     		case "numbers":
     			t=new NumberToText(t);
     			break;

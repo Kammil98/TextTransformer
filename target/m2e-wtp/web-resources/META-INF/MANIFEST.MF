@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: io-project-architecture
-Implementation-Version: 0.1
+Implementation-Version: v1.0.0
 Built-By: Kornelia
 Implementation-Vendor-Id: pl.put.poznan
 Build-Jdk: 1.8.0_231
