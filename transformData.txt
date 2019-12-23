@@ -1,1 +1,1 @@
-{"textToChange":"1001","Transforms List":["transform: numbers"]}
+{"textToChange":"jakis","Transforms List":["transform: inverse","transform: capitalize"]}

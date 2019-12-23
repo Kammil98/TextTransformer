@@ -18,6 +18,7 @@ public class ToLower extends TextTransformerDecorator{
 	 * @param transform_object text to change
 	 * */
 	public String transform_text(String transform_object) {	
+		transform_object = super.transform_text(transform_object);
 		return transform_object.toLowerCase();
 	}
 	

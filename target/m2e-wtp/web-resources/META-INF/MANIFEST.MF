@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: io-project-architecture
 Implementation-Version: v1.0.0
-Built-By: Kornelia
+Built-By: kamil_2
 Implementation-Vendor-Id: pl.put.poznan
-Build-Jdk: 1.8.0_231
+Build-Jdk: 1.8.0_144
 Implementation-URL: http://projects.spring.io/spring-boot/io-project-a
  rchitecture/
 Created-By: Maven Integration for Eclipse

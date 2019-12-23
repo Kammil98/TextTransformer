@@ -16,7 +16,7 @@ public class TextTransformer {
 
     public String transform(String text){
     	TransformInterface t = new TextTransformerDecoratorHelper();
-    	boolean transoformable;
+    	boolean transoformable = true;
     	for(String operation: transforms) {
     		transoformable = true;
     		switch(operation) {
@@ -41,10 +41,10 @@ public class TextTransformer {
         	default :
         		transoformable = false;
     		}
-    		if(transoformable)
-    			text=t.transform_text(text); 
+    		/*if(transoformable)
+    			text=t.transform_text(text); */
     	}
-    	
+    	text=t.transform_text(text); 
        //System.out.println(text);
     	this.textToChange=text;
         return text;

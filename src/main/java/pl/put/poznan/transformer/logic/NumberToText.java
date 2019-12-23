@@ -69,6 +69,7 @@ public class NumberToText extends TextTransformerDecorator{
 	 * @param transform_object text to change
 	 * */
 	public String transform_text(String transform_object) {
+		transform_object = super.transform_text(transform_object);
 		String[] words=transform_object.split(" ");
 		
 		for (int i=0;i<words.length;i++) {

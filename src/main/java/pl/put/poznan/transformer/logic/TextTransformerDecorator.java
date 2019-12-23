@@ -5,11 +5,19 @@ abstract class TextTransformerDecorator implements TransformInterface {
 	private TransformInterface core;
 	
 	public TextTransformerDecorator(TransformInterface inner) {
-        core = inner;
+        setCore(inner);
     }
 
     public String transform_text(String transform_object) {
-        core.transform_text(transform_object);
+        getCore().transform_text(transform_object);
         return transform_object;
     }
+
+	public TransformInterface getCore() {
+		return core;
+	}
+
+	public void setCore(TransformInterface core) {
+		this.core = core;
+	}
 }
