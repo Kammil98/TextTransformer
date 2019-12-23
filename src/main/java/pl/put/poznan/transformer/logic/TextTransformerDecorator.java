@@ -9,7 +9,7 @@ abstract class TextTransformerDecorator implements TransformInterface {
     }
 
     public String transform_text(String transform_object) {
-        getCore().transform_text(transform_object);
+    	transform_object = getCore().transform_text(transform_object);
         return transform_object;
     }
 
