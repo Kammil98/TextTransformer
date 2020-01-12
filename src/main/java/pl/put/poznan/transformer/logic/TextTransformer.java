@@ -38,6 +38,12 @@ public class TextTransformer {
     		case "numbers":
     			t=new NumberToText(t);
     			break;
+    		case "shorten":
+    			t=new Shorten(t);
+    			break;
+    		case "lengthen":
+    			t=new Lengthen(t);
+    			break;
         	default :
         		transoformable = false;
     		}
